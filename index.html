@@ -1,0 +1,176 @@
+<!-- Project by Arthur Kenway. Visit me on git :  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani Chan</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-image: url(px1.jpg);
+            font-family: 'Noto Sans JP', sans-serif;
+            background-repeat: no-repeat;
+
+        }
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 40px;
+        }
+        .mid {
+            display: block;
+            width: 33%;
+            margin: 10px auto;
+        }
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            right: 40px;
+        }
+        .navbar {
+            display: inline-block;
+            width: 102%;
+            position: relative;
+            right: 50px;
+           
+        }
+        .navbar li {
+            list-style: none;
+            padding: 15px;
+            margin: 10px auto;
+            font-size: 17px;
+            display: inline-block;
+            
+        }
+        
+        
+        .navbar a {
+            text-decoration: none;
+            color: white;
+        }
+        .navbar a:hover {
+            padding-bottom:15px;
+            border-bottom-style:solid;
+            border-bottom-width:3.1px;
+            width: fit-content;
+        }
+        .logo {
+            height:60px;
+            width: 60px;
+            position: relative;
+            top: 15px;
+        }
+        .logoName {
+            position: absolute;
+            text-align: center;
+            color: antiquewhite;
+            top: 90px;
+            text-align: center;
+            width: 120%;
+            right: -5px;
+        }
+        .btn {
+            padding: 5px;
+            margin-top: 30px;
+            margin-right: 10px;
+            display: inline-block;
+            position: relative;
+            align-items: center;
+            color: antiquewhite;
+            text-decoration: none;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+            border-radius:25px;
+            transition: all 1s;
+            overflow: hidden;
+            text-align: center;
+        }
+        .btn::before {
+            content: "";
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            transition: all 1s;
+            left: 0;
+            position: absolute;
+            z-index: -1;
+            transform: translateX(-100%);
+        }
+        .btn:hover::before {
+            transform: translatex(0);
+        }
+        .btn:hover {
+            color: #ffff;
+        }
+        .container {
+            border: 2px solid white;
+            color:white;
+            margin: 100px 75px;
+            padding: 75px;
+            border-radius: 28px;
+            width: 33%;
+            position: relative;
+            left: 280px;
+        }
+  .form-group input {
+    text-align: center;
+    display: block;
+    width: 413px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 30px auto;
+    font-size: 21px;
+    border-radius: 8px;
+    
+  }
+  .container h1 {
+    text-align: center;
+  }
+  .container a  {
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    right: 20px;
+
+    
+  }
+        
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="left"><img src="px.jpg" alt="" class="logo"><div class="logoName">Ani-Chan</div></div>
+        <div class="mid"><ul class="navbar">
+            <li><a href="">Home</a></li>
+            <li><a href="">Our Goal</a></li>
+            <li><a href="" >Otaku Culture</a></li>
+            <li><a href="" >Contact Us</a></li>
+        </ul></div>
+        <div class="right"><a href="" class="btn">Billing</a><a href="" class="btn">Sign Up</a></div>
+    </header>
+    <div class="container">
+        <h1>Join the best Anime publishing service now</h1>
+        <form action="noaction.php"><div class="form-group">
+            <input type="text" name="" id="" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <input type="email" name="" id="" placeholder="Enter Your Email">
+        </div>
+        <div class="form-group">
+            <input type="password" name="" id="" placeholder="Enter Your Password">
+        </div>
+        <div class="form-group">
+            <input type="password" name="" id="" placeholder="Confirm Password">
+        </div> <a href="" class="btn">Submit</a></form>    
+    </div>
+</body>
+</html>
